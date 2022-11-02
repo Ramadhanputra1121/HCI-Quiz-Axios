@@ -7,7 +7,7 @@
             <ion-grid>
               <ion-row>
                 <ion-col>
-                  <ion-title class="ion-float-left">Kolam</ion-title>
+                  <ion-title class="ion-float-left" id="judulkolam">Kolam</ion-title>
                 </ion-col>
                 <ion-col size="1">
                   <ion-icon src="assets/img/Sorting.svg"></ion-icon>
@@ -24,7 +24,7 @@
             <ion-card-header>
               <div class="cardhead">
                 <ion-card-title class="abjad">Alpha</ion-card-title>
-                <p class="actv">Aktif</p>
+                <button class="actv">Aktif</button>
               </div>
               <div class="garis"></div>
             </ion-card-header>
@@ -63,7 +63,7 @@
             <ion-card-header>
               <div class="cardhead">
                 <ion-card-title class="abjad">Bravo</ion-card-title>
-                <p class="noactv">Tidak Aktif</p>
+                <button class="noactv">Tidak Aktif</button>
               </div>
               <div class="garis"></div>
             </ion-card-header>
@@ -102,7 +102,7 @@
             <ion-card-header>
               <div class="cardhead">
                 <ion-card-title class="abjad">Charlie</ion-card-title>
-                <p class="actv">Aktif</p>
+                <button class="actv">Aktif</button>
               </div>
               <div class="garis"></div>
             </ion-card-header>
@@ -141,7 +141,7 @@
             <ion-card-header>
               <div class="cardhead">
                 <ion-card-title class="abjad">Delta</ion-card-title>
-                <p class="actv">Aktif</p>
+                <button class="actv">Aktif</button>
               </div>
               <div class="garis"></div>
             </ion-card-header>
@@ -180,7 +180,7 @@
             <ion-card-header>
               <div class="cardhead">
                 <ion-card-title class="abjad">Echo</ion-card-title>
-                <p class="actv">Aktif</p>
+                <button class="actv">Aktif</button>
               </div>
               <div class="garis"></div>
             </ion-card-header>
@@ -219,7 +219,7 @@
             <ion-card-header>
               <div class="cardhead">
                 <ion-card-title class="abjad">Foxtrot</ion-card-title>
-                <p class="noactv">Tidak Aktif</p>
+                <button class="noactv">Tidak Aktif</button>
               </div>
               <div class="garis"></div>
             </ion-card-header>
@@ -258,7 +258,7 @@
             <ion-card-header>
               <div class="cardhead">
                 <ion-card-title class="abjad">Golf</ion-card-title>
-                <p class="noactv">Tidak Aktif</p>
+                <button class="noactv">Tidak Aktif</button>
               </div>
               <div class="garis"></div>
             </ion-card-header>
@@ -297,7 +297,7 @@
             <ion-card-header>
               <div class="cardhead">
                 <ion-card-title class="abjad">Hotel</ion-card-title>
-                <p class="actv">Aktif</p>
+                <button class="actv">Aktif</button>
               </div>
               <div class="garis"></div>
             </ion-card-header>
@@ -336,7 +336,7 @@
             <ion-card-header>
               <div class="cardhead">
                 <ion-card-title class="abjad">India</ion-card-title>
-                <p class="actv">Aktif</p>
+                <button class="actv">Aktif</button>
               </div>
               <div class="garis"></div>
             </ion-card-header>
@@ -375,7 +375,7 @@
             <ion-card-header>
               <div class="cardhead">
                 <ion-card-title class="abjad">Juliet</ion-card-title>
-                <p class="actv">Aktif</p>
+                <button class="actv">Aktif</button>
               </div>
               <div class="garis"></div>
             </ion-card-header>
@@ -413,7 +413,7 @@
             <ion-card-header>
               <div class="cardhead">
                 <ion-card-title class="abjad">Kilo</ion-card-title>
-                <p class="noactv">Tidak Aktif</p>
+                <button class="noactv">Tidak Aktif</button>
               </div>
               <div class="garis"></div>
             </ion-card-header>
@@ -452,7 +452,7 @@
             <ion-card-header>
               <div class="cardhead">
                 <ion-card-title class="abjad">Lima</ion-card-title>
-                <p class="noactv">Tidak Aktif</p>
+                <button class="noactv">Tidak Aktif</button>
               </div>
               <div class="garis"></div>
             </ion-card-header>
@@ -491,7 +491,7 @@
             <ion-card-header>
               <div class="cardhead">
                 <ion-card-title class="abjad">Mike</ion-card-title>
-                <p class="noactv">Tidak Aktif</p>
+                <button class="noactv">Tidak Aktif</button>
               </div>
               <div class="garis"></div>
             </ion-card-header>
@@ -530,7 +530,7 @@
             <ion-card-header>
               <div class="cardhead">
                 <ion-card-title class="abjad">November</ion-card-title>
-                <p class="noactv">Tidak Aktif</p>
+                <button class="noactv">Tidak Aktif</button>
               </div>
               <div class="garis"></div>
             </ion-card-header>
@@ -569,7 +569,7 @@
             <ion-card-header>
               <div class="cardhead">
                 <ion-card-title class="abjad">Oscar</ion-card-title>
-                <p class="noactv">Tidak Aktif</p>
+                <button class="noactv">Tidak Aktif</button>
               </div>
               <div class="garis"></div>
             </ion-card-header>
@@ -608,7 +608,7 @@
             <ion-card-header>
               <div class="cardhead">
                 <ion-card-title class="abjad">Papa</ion-card-title>
-                <p class="actv">Aktif</p>
+                <button class="actv">Aktif</button>
               </div>
               <div class="garis"></div>
             </ion-card-header>
@@ -647,7 +647,7 @@
             <ion-card-header>
               <div class="cardhead">
                 <ion-card-title class="abjad">Quebec</ion-card-title>
-                <p class="actv">Aktif</p>
+                <button class="actv">Aktif</button>
               </div>
               <div class="garis"></div>
             </ion-card-header>
@@ -686,7 +686,7 @@
             <ion-card-header>
               <div class="cardhead">
                 <ion-card-title class="abjad">Romeo</ion-card-title>
-                <p class="actv">Aktif</p>
+                <button class="actv">Aktif</button>
               </div>
               <div class="garis"></div>
             </ion-card-header>
@@ -725,7 +725,7 @@
             <ion-card-header>
               <div class="cardhead">
                 <ion-card-title class="abjad">Sierra</ion-card-title>
-                <p class="actv">Aktif</p>
+                <button class="actv">Aktif</button>
               </div>
               <div class="garis"></div>
             </ion-card-header>
@@ -764,7 +764,7 @@
             <ion-card-header>
               <div class="cardhead">
                 <ion-card-title class="abjad">Tango</ion-card-title>
-                <p class="noactv">Tidak Aktif</p>
+                <button class="noactv">Tidak Aktif</button>
               </div>
               <div class="garis"></div>
             </ion-card-header>
@@ -803,7 +803,7 @@
             <ion-card-header>
               <div class="cardhead">
                 <ion-card-title class="abjad">Uniform</ion-card-title>
-                <p class="actv">Aktif</p>
+                <button class="actv">Aktif</button>
               </div>
               <div class="garis"></div>
             </ion-card-header>
@@ -842,7 +842,7 @@
             <ion-card-header>
               <div class="cardhead">
                 <ion-card-title class="abjad">Victor</ion-card-title>
-                <p class="noactv">Tidak Aktif</p>
+                <button class="noactv">Tidak Aktif</button>
               </div>
               <div class="garis"></div>
             </ion-card-header>
@@ -881,7 +881,7 @@
             <ion-card-header>
               <div class="cardhead">
                 <ion-card-title class="abjad">Whiskey</ion-card-title>
-                <p class="actv">Aktif</p>
+                <button class="actv">Aktif</button>
               </div>
               <div class="garis"></div>
             </ion-card-header>
@@ -920,7 +920,7 @@
             <ion-card-header>
               <div class="cardhead">
                 <ion-card-title class="abjad">X-ray</ion-card-title>
-                <p class="actv">Aktif</p>
+                <button class="actv">Aktif</button>
               </div>
               <div class="garis"></div>
             </ion-card-header>
@@ -959,7 +959,7 @@
             <ion-card-header>
               <div class="cardhead">
                 <ion-card-title class="abjad">Yankee</ion-card-title>
-                <p class="actv">Aktif</p>
+                <button class="actv">Aktif</button>
               </div>
               <div class="garis"></div>
             </ion-card-header>
@@ -998,7 +998,7 @@
             <ion-card-header>
               <div class="cardhead">
                 <ion-card-title class="abjad">Zulu</ion-card-title>
-                <p class="noactv">Tidak Aktif</p>
+                <button class="noactv">Tidak Aktif</button>
               </div>
               <div class="garis"></div>
             </ion-card-header>
@@ -1085,10 +1085,10 @@ export default defineComponent({
   text-decoration: none;
 }
 
-h1 {
+#judulkolam {
   font-size: 20px;
   font-weight: 600;
-  margin-left: 30px;
+  margin-left: -10px;
 }
 
 
@@ -1098,23 +1098,24 @@ h1 {
 }
 
 .box {
-  padding: 10px 0px;
   background-color: white;
   color: black;
-  margin: 30px;
   border-radius: 16px;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 600;
-  line-height: 27px;
 }
 
 .cardhead {
-  columns: 2;
+  display: flex;
+  justify-content: space-between;
+  
 }
 
 .abjad {
   font-family: poppin;
   color: black;
+  font-size: 18px;
+  font-weight: bold;
   margin-top: 10px;
 }
 
@@ -1124,35 +1125,36 @@ h1 {
 }
 
 .actv {
-  font-family: popreg;
-  font-size: 16px;
-  margin-left: 70px;
-  margin-bottom: -20px;
-  background-color: #1B7C1A;
-  text-align: center;
-  vertical-align: middle;
-  padding: 10px 5px;
   color: white;
-  border-radius: 14px;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 10px;
+  gap: 10px;
+  width: 58px;
+  height: 34px;
+  background: green;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: bold;
 }
 
 .noactv {
-  font-family: popreg;
-  font-size: 16px;
-  margin-left: 70px;
-  margin-bottom: -20px;
-  background-color: #952229;
-  text-align: center;
-  vertical-align: middle;
-  padding: 10px 5px;
   color: white;
-  border-radius: 14px;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 10px;
+  gap: 10px;
+  width: 108px;
+  height: 34px;
+  background: darkred;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: bold;
 }
-
 
 .garis {
   margin-top: 10px;
-  border-bottom: black 2px solid;
+  border-bottom: black 3px solid;
 }
 </style>
   
