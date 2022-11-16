@@ -1036,6 +1036,9 @@
 
       </ion-grid>
     </ion-content>
+    <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button href="/registrationpage"><span style="font-size: 60px; font-weight:bolder">+</span></ion-fab-button>
+    </ion-fab>
   </ion-page>
 </template>
   
@@ -1108,7 +1111,7 @@ export default defineComponent({
 .cardhead {
   display: flex;
   justify-content: space-between;
-  
+
 }
 
 .abjad {
