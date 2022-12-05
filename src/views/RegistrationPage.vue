@@ -34,6 +34,12 @@
     </ion-list>
     <ion-list>
       <ion-item>
+        <ion-label position="stacked">Jumlah Ikan</ion-label>
+        <ion-input placeholder="200" v-model="jumlahikan"></ion-input>
+      </ion-item>
+    </ion-list>
+    <ion-list>
+      <ion-item>
         <ion-label position="stacked">Material Kolam</ion-label>
         <ion-select interface="action-sheet" v-model="materialkolam">
           <ion-select-option value="tanah">Tanah</ion-select-option>
@@ -58,9 +64,10 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue';
+import { defineComponent, onMounted, ref } from 'vue';
 import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent, IonButton, IonLabel, IonInput, IonItem, IonList, IonSelect, IonSelectOption } from '@ionic/vue';
-import axios from 'axios'
+import axios from 'axios';
+import { add } from "ionicons/icons";
 
 export default defineComponent({
   name: 'RegistrationPage',
@@ -69,33 +76,48 @@ export default defineComponent({
     return {
       namakolam: '',
       lokasikolam: '',
+      jumlahikan: "",
       materialkolam: '',
       bentukkolam: '',
-    }
+    };
   },
   methods: {
+    date(date: string) {
+      const d = new Date(date);
+      const month = d.getMonth() + 1;
+      const day = d.getDate();
+      const year = d.getFullYear();
+      return `${day}-${month}-${year}`;
+    },
+    findDay(date: string) {
+      const d = new Date(date);
+      const diff = new Date().getTime() - d.getTime();
+      return Math.floor(diff / (1000 * 60 * 60 * 24));
+    },
     getFormValues() {
       let form
-      form = [this.namakolam, this.lokasikolam, this.materialkolam, this.bentukkolam]
+      form = [this.namakolam, this.lokasikolam, this.jumlahikan, this.materialkolam, this.bentukkolam]
       console.log(form)
       console.log(this.namakolam)
       console.log(this.lokasikolam)
+      console.log(this.jumlahikan)
       console.log(this.materialkolam)
       console.log(this.bentukkolam)
-
-      var api = "http://jft.web.id/fishapi/api/ponds"
-
-      axios.get(api)
-        .then(function (response) {
-          console.log(response);
-        })
-        .catch(function (error) {
-          console.log(error);
-        })
     }
-
+  },
+  setup() {
+    const ponds = ref();
+    onMounted(async () => {
+      const response = await axios.get('http://jft.web.id/fishapi/api/ponds')
+      ponds.value = response.data
+      console.log(response.data)
+    });
+    return {
+      add, ponds
+    }
   }
 });
+
 </script>
 
 <style scoped>
